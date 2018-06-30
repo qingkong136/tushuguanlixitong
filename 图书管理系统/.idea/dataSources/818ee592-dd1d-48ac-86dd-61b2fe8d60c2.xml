@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_librarySys@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_librarysys">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="51"/>
+    <schema id="4" parent="1" name="cartds"/>
+    <schema id="5" parent="1" name="choujiang"/>
+    <schema id="6" parent="1" name="db_database10"/>
+    <schema id="7" parent="1" name="demo"/>
+    <schema id="8" parent="1" name="fresh"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="library"/>
+    <schema id="11" parent="1" name="mall"/>
+    <schema id="12" parent="1" name="mysql"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="score"/>
+    <schema id="15" parent="1" name="student"/>
+    <schema id="16" parent="1" name="sy2_1"/>
+    <schema id="17" parent="1" name="sys"/>
+    <schema id="18" parent="1" name="test"/>
+    <schema id="19" parent="1" name="test1"/>
+    <schema id="20" parent="1" name="test2"/>
+    <schema id="21" parent="1" name="test3"/>
+    <schema id="22" parent="1" name="test4"/>
+    <schema id="23" parent="1" name="xscj_chao"/>
+    <table id="24" parent="2" name="tb_bookcase"/>
+    <table id="25" parent="2" name="tb_bookinfo"/>
+    <table id="26" parent="2" name="tb_booktype"/>
+    <table id="27" parent="2" name="tb_borrow"/>
+    <table id="28" parent="2" name="tb_giveback"/>
+    <table id="29" parent="2" name="tb_library"/>
+    <table id="30" parent="2" name="tb_manager"/>
+    <table id="31" parent="2" name="tb_parameter"/>
+    <table id="32" parent="2" name="tb_publishing"/>
+    <table id="33" parent="2" name="tb_purview"/>
+    <table id="34" parent="2" name="tb_reader"/>
+    <table id="35" parent="2" name="tb_readertype"/>
+    <column id="36" parent="24" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="24" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="38" parent="24" name="Column_3">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <key id="39" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="25" name="barcode">
+      <Position>1</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="41" parent="25" name="bookname">
+      <Position>2</Position>
+      <DataType>varchar(70)|0</DataType>
+    </column>
+    <column id="42" parent="25" name="typeid">
+      <Position>3</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="43" parent="25" name="author">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="44" parent="25" name="translator">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="45" parent="25" name="ISBN">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="46" parent="25" name="price">
+      <Position>7</Position>
+      <DataType>float(8,2)|0</DataType>
+    </column>
+    <column id="47" parent="25" name="page">
+      <Position>8</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="48" parent="25" name="bookcase">
+      <Position>9</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="49" parent="25" name="inTime">
+      <Position>10</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="50" parent="25" name="operator">
+      <Position>11</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="51" parent="25" name="del">
+      <Position>12</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="52" parent="25" name="id">
+      <Position>13</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <key id="53" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="55" parent="26" name="typename">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="56" parent="26" name="days">
+      <Position>3</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <key id="57" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="27" name="readerid">
+      <Position>2</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="60" parent="27" name="bookid">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="61" parent="27" name="borrowTime">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="62" parent="27" name="backTime">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="63" parent="27" name="operator">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="64" parent="27" name="ifback">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="65" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="67" parent="28" name="readerid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="28" name="bookid">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="69" parent="28" name="backTime">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="70" parent="28" name="operator">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="71" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="72" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="73" parent="29" name="libraryname">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="74" parent="29" name="curator">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="75" parent="29" name="tel">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="76" parent="29" name="address">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="77" parent="29" name="email">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="78" parent="29" name="url">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="79" parent="29" name="createDate">
+      <Position>8</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="80" parent="29" name="introduce">
+      <Position>9</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <key id="81" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="82" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="83" parent="30" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="84" parent="30" name="PWD">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="85" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="86" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="87" parent="31" name="cost">
+      <Position>2</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="88" parent="31" name="validity">
+      <Position>3</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <key id="89" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="90" parent="32" name="ISBN">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="91" parent="32" name="pubname">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="92" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="33" name="sysset">
+      <Position>2</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="94" parent="33" name="readerset">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="95" parent="33" name="bookset">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="96" parent="33" name="borrowback">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="97" parent="33" name="sysquery">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="98" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="99" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="100" parent="34" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="101" parent="34" name="sex">
+      <Position>3</Position>
+      <DataType>varchar(4)|0</DataType>
+    </column>
+    <column id="102" parent="34" name="barcode">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="103" parent="34" name="vocation">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="104" parent="34" name="birthday">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="105" parent="34" name="paperType">
+      <Position>7</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="106" parent="34" name="paperNO">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="107" parent="34" name="tel">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="108" parent="34" name="email">
+      <Position>10</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="109" parent="34" name="createDate">
+      <Position>11</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="110" parent="34" name="operator">
+      <Position>12</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="111" parent="34" name="remark">
+      <Position>13</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="112" parent="34" name="typeid">
+      <Position>14</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="113" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="114" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="115" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="116" parent="35" name="number">
+      <Position>3</Position>
+      <DataType>int(4)|0</DataType>
+    </column>
+    <key id="117" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
